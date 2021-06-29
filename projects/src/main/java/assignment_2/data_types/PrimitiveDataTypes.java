@@ -7,5 +7,16 @@ public class PrimitiveDataTypes {
          */
 
         int i = 0;
+        double newi = i;
+        double d = 1;
+        long l = 1000000L;
+        byte b = 1;
+        char c = '1';
+        boolean isJavaFun = true;
+        float f = 1.0F;
+        float newfloat = (float)(d *f);
+        int newint= (int)(d*f);
+        char newchar = (int)(c);
+
     }
 }
