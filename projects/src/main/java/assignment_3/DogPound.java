@@ -70,7 +70,7 @@ public class DogPound {
              */
             System.out.println("bark!");
 
-            return null;
+            return String "bark";
         }
     }
 }
