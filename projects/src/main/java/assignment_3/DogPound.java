@@ -50,7 +50,8 @@ public class DogPound {
             name = null;
         }
 
-        public void setName(String n) throws Exception {
+        public void setName(String n) {
+
             /*
                 Please finish this method, you want to set the private variable "name" of the
                 class Dog to the value of the parameter of the "setName" method.
@@ -59,8 +60,7 @@ public class DogPound {
 
                 <data type> <variable name> = <expression>
              */
-
-            throw new Exception("Please implement this function");
+            this.name = n;
         }
 
         public String speak() {
@@ -68,6 +68,7 @@ public class DogPound {
                 Please finish this method, you want to ensure that your dog speaks
                 when you ask them to.
              */
+            System.out.println("bark!");
 
             return null;
         }
