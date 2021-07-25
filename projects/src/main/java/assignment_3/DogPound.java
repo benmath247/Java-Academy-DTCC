@@ -68,9 +68,9 @@ public class DogPound {
                 Please finish this method, you want to ensure that your dog speaks
                 when you ask them to.
              */
-            System.out.println("bark!");
+//            System.out.println("bark!");
 
-            return String "bark";
+            return "bark";
         }
     }
 }

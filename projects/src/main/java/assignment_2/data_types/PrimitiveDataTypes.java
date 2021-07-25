@@ -16,7 +16,7 @@ public class PrimitiveDataTypes {
         float f = 1.0F;
         float newfloat = (float)(d *f);
         int newint= (int)(d*f);
-        char newchar = (int)(c);
+//        char newchar = (int)(c);
 
     }
 }

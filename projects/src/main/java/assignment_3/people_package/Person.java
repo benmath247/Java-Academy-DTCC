@@ -1,4 +1,5 @@
 package assignment_3.people_package;
+
 /*
     This is the class you need to work on
     If you were to create a class from scratch, please remember that the name of the class should match
@@ -8,13 +9,14 @@ package assignment_3.people_package;
     1) https://stackoverflow.com/questions/1841847/can-i-compile-a-java-file-with-a-different-name-than-the-class
  */
 
-public class Person {
+public class Person //implements Comparable<Person>
+    {
 
     private String name;
     private int age;
     private int id;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, int id) {
         this.name = name;
         this.age = age;
         this.id = (int)(Math.random() * 1000);
@@ -55,6 +57,20 @@ public class Person {
         return  "Name: " + name + " \n"
                 + "Age: " + age + " \n"
                 + "ID: " + id + "\n";
+    }
+
+    public int compareTo(Person p)
+    {
+        int result = this.getAge() - p.getAge();
+
+        if (result < 0)
+            result = -1;
+        else if (result > 0)
+            result = 1;
+        else if (result == 0)
+            result = 0;
+
+        return result;
     }
 
     public static void main(String[] args){
